@@ -1,9 +1,10 @@
 import java.util.Scanner
-fun main(){
+
+fun main() {
     /**
      * Data types practice
      */
-    val byteMaxValue= Byte.MAX_VALUE
+    /*val byteMaxValue= Byte.MAX_VALUE
     println(byteMaxValue)
     val byteMinValue = Byte.MIN_VALUE
     println(byteMinValue)
@@ -75,22 +76,53 @@ fun main(){
     val str :String = "Rakib"
     println(str)
     val bool:Boolean = true
-    println(bool)
+    println(bool)*/
     /**
      * Leap year
      */
-//    var sc = Scanner(System.`in`)
-//    println("Enter a Year : ")
-//    var year:Int = sc.nextInt()
-//    if(year!=0){
-//        if(year%4==0){
-//            println("$year is a leap year.")
-//        }
-//        else if(year%100==0){
-//            println("$year is not a leap year.")
-//        }
-//        else if(year%400 == 0)
-//    }
+    /*    var sc = Scanner(System.`in`)
+        print("Enter a Year : ")
+        var year:Int = sc.nextInt()
+        if(year != 0){
+            if(year%4==0){
+                println("$year is a leap year.")
+            }
+            else if(year%100==0){
+                println("$year is a leap year.")
+            }
+            else if(year%400 == 0){
+                println("$year is a leap year.")
+            }
+            else{
+                println("$year is not a leap year.")
+            }
+        }
+        else {
+            println("Enter a valid year.")
+        }*/
+    /**
+     * Program -1 : Grade calculation program
+     */
+    var sc = Scanner(System.`in`)
+    print("Enter your marks: ")
+    var marks: Int = sc.nextInt() // marks input
+    if (marks >= 0 && marks <= 32) {
+        println("Your grade is : F")
+    } else if (marks >= 33 && marks <= 39) {
+        println("Your grade is : D")
+    } else if (marks >= 40 && marks <= 49) {
+        println("Your grade is : C")
+    } else if (marks >= 50 && marks <= 59) {
+        println("Your grade is : B")
+    } else if (marks >= 60 && marks <= 69) {
+        println("Your grade is : A-")
+    } else if (marks >= 70 && marks <= 79) {
+        println("your grade is : A")
+    } else if (marks >= 80 && marks <= 89 && marks <= 100) {
+        println("Your grade is : A+")
+    } else {
+        println("Invalid grade!")
+    }
 
 
 }
