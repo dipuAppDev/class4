@@ -79,18 +79,19 @@ fun main(){
     /**
      * Leap year
      */
-//    var sc = Scanner(System.`in`)
-//    println("Enter a Year : ")
-//    var year:Int = sc.nextInt()
-//    if(year!=0){
-//        if(year%4==0){
-//            println("$year is a leap year.")
-//        }
-//        else if(year%100==0){
-//            println("$year is not a leap year.")
-//        }
-//        else if(year%400 == 0)
-//    }
+   var sc = Scanner(System.`in`)
+   println("Enter a Year : ")
+   var year:Int = sc.nextInt()
+   if(year!=0){
+       if(year%4==0){
+           println("$year is a leap year.")
+       }
+       else if(year%100==0){
+           println("$year is not a leap year.")
+       }
+       else if(year%400 == 0){
+           println("")
+   }
 
 
 }
